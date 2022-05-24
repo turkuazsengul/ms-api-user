@@ -7,8 +7,7 @@ spring:
   application:
     name: user
   config:
-    #    import: configserver:http://configuration:8888
-    import: configserver:http://localhost:8888
+    import: configserver:http://configuration:8888
   cloud:
     stream:
       bindings:
@@ -20,7 +19,7 @@ spring:
           environment:
             spring:
               rabbitmq:
-                host: localhost
+                host: trendburada-rabbit
                 port: 5672
                 username: guest
                 password: guest
